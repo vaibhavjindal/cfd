@@ -1,8 +1,8 @@
 # cfd
 code.fun.do 2018 repository
 
-Team Name- Hackermen 
-Project Name- Sci-scraper
+Team Name- Hackermen B-)
+Project Name- Sciscraper
 
 Contributors:
 Vaibhav Jindal
