@@ -11,10 +11,20 @@
 <h1>Inserting pdfs</h1>
 
 <div id="example1">hello</div>
-
+	<br>
   <!--<form method="post" enctype="multipart/form-data" action="/upload">
     <input type="file" name="file">
     <input type="submit" value="Submit">-->
+
+    <p>
+        <input type="file" id="file" multiple onchange="GetFileSizeNameAndType()" />
+    </p>
+
+    <div id="fp"></div>
+    <p>
+        <div id="divTotalSize"></div>
+    </p>
+    <script src="script.js"></script>
     <script src="PDFObject/pdfobject.js"></script>
 <script>PDFObject.embed("latex _project.pdf", "#example1");</script>
 </body>
