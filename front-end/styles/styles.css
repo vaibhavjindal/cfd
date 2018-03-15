@@ -7,7 +7,7 @@
     top: 6px;
 }
 
-.btn {
+.btn,#file,#fp,#divTotalSize{
     outline: none;
     border: none;
     cursor: pointer;

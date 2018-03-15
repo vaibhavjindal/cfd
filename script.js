@@ -4,7 +4,7 @@
  // console.log('It Works');
 //});
 
-function GetFileSizeNameAndType()
+/*function GetFileSizeNameAndType()
         {
         var fi = document.getElementById('file'); // GET THE FILE INPUT AS VARIABLE.
 
@@ -21,13 +21,30 @@ function GetFileSizeNameAndType()
                 totalFileSize = totalFileSize + fsize;
                 document.getElementById('fp').innerHTML =
                 document.getElementById('fp').innerHTML
-                +
-                '<br /> ' + 'File Name is <b>' + fi.files.item(i).name
-                +
-                '</b> and Size is <b>' + Math.round((fsize / 1024)) //DEFAULT SIZE IS IN BYTES SO WE DIVIDING BY 1024 TO CONVERT IT IN KB
-                +
-                '</b> KB and File Type is <b>' + fi.files.item(i).type + "</b>.";
+                //+
+                //'<br /> ' + 'File Name is <b>' 
+                + fi.files.item(i).name;
+                //+
+                //'</b> and Size is <b>' + Math.round((fsize / 1024)) //DEFAULT SIZE IS IN BYTES SO WE DIVIDING BY 1024 TO CONVERT IT IN KB
+                //+
+                //'</b> KB and File Type is <b>' + fi.files.item(i).type + "</b>.";
             }
         }
-        document.getElementById('divTotalSize').innerHTML = "Total File(s) Size is <b>" + Math.round(totalFileSize / 1024) + "</b> KB";
+        document.getElementById("pdfobject").innerHTML=PDFObject.embed("pdfs/file.pdf", "#example1");
+        //document.getElementById('divTotalSize').innerHTML = "Total File(s) Size is <b>" + Math.round(totalFileSize / 1024) + "</b> KB";
     }
+
+
+function fun(){
+    document.getElementById("pdfobject").innerHTML=PDFObject.embed("pdfs/file.pdf", "#example1");
+}
+
+
+document.getElementById("b1").onclick=*/
+
+var po=require("PDFObject/pdfobject.js");
+
+var y=document.getElementById("f1");
+
+PDFObject.embed("pdfs/file.pdf", "#f1");
+
