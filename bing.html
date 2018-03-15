@@ -5,13 +5,19 @@
 <html>
 <head>
     <meta charset="UTF-8"> 
-    <title>Bing Web Search API Demo</title>
+    <title>Sciscraper</title>
     <base target="_blank">
 <style type="text/css">
 
+.pdfobject-container { height: 500px; width: 1000px;}
+.pdfobject { border: 1px solid #666; }
+
+<!-- Bootstrap core CSS -->
+    
+
 html, body, div, p, h1, h2 {font-family: Verdana, "Lucida Sans", sans-serif; color: #000;}
 html, body, div, p  {font-weight: normal;}
-body {background-color: #fff;}
+
 
 h1, h2, h3 {font-weight: bold; color: #087;}
 sup {font-weight: normal;}
@@ -455,8 +461,18 @@ function doPrevSearchPage() {
 // --></script>
 
 </head>
-<body onload="document.forms.bing.query.focus();">
+<body onload="document.forms.bing.query.focus();" background="bg.jpg">
+    <center>
+    <div id="f1"></div><br><br><br><br>
+    <div id="f2" align="center"></div><br><br><br><br>
+    <div id="f3" align="center"></div><br><br><br><br>
+    <div id="f4" align="center"></div><br><br><br><br></center>
 
+    <script src="PDFObject/pdfobject.js"></script>
+<script>PDFObject.embed("pdfs/file.pdf", "#f1");</script><br>
+<script>PDFObject.embed("pdfs/file4.pdf", "#f2");</script><br>
+<script>PDFObject.embed("pdfs/file2.pdf", "#f3");</script><br>
+<script>PDFObject.embed("pdfs/file3.pdf", "#f4");</script><br>
 
     <div id="fp"></div>
     <p>
@@ -519,7 +535,7 @@ function doPrevSearchPage() {
 </div>
 
 <div id="query"><!-- query controls including search field and options -->
-    <h1>Bing Web Search API demo</h2>    
+    <h1>Bing Web Search</h2>    
 
         <input type="text" name="query" id="term" placeholder="Search the Web" autocomplete=off>
 
